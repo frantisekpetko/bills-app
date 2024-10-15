@@ -50,7 +50,7 @@
     "commander": "^11.0.0",
     "cookie-parser": "^1.4.6",
     "dayjs": "^1.11.11",
-    "easy-peasy": "^5.0.4",
+    "easy-peasy": "^6.0.5",
     "formik": "^2.2.9",
     "google-auth-library": "^8.7.0",
     "graphql": "^16.7.1",
