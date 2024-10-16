@@ -76,7 +76,7 @@
     "@babel/parser": "^7.24.1",
     "@babel/types": "^7.24.0",
     "@faker-js/faker": "^7.6.0",
-    "@nestjs/cli": "^10.3.2",
+    "@nestjs/cli": "^10.4.5",
     "@nestjs/schematics": "^10.1.1",
     "@nestjs/testing": "^10.4.4",
     "@next/eslint-plugin-next": "^13.1.1",
