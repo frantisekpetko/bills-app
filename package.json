@@ -79,7 +79,7 @@
     "@nestjs/cli": "^10.4.5",
     "@nestjs/schematics": "^10.1.1",
     "@nestjs/testing": "^10.4.4",
-    "@next/eslint-plugin-next": "^13.1.1",
+    "@next/eslint-plugin-next": "^14.2.15",
     "@types/body-parser": "^1.19.5",
     "@types/cookie-parser": "^1.4.3",
     "@types/eslint": "^9.6.1",
