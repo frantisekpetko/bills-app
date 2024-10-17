@@ -111,7 +111,7 @@
     "json-schema": "^0.4.0",
     "mime": "^4.0.1",
     "prettier": "^3.3.3",
-    "supertest": "^6.3.3",
+    "supertest": "^7.0.0",
     "ts-jest": "^28.0.8",
     "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
