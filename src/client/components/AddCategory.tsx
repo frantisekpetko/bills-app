@@ -14,7 +14,7 @@ interface Category {
 
 const AddCategory = () => {
   const categoryRef = React.useRef<RefObject<HTMLInputElement>>(null);
-  const [categories, setCategories] = React.useState<Category[]>([
+  const [categories, setCategories] = React.useState<any>([
     { category: '' },
   ]);
 
@@ -60,7 +60,7 @@ const AddCategory = () => {
                       >,
                     ) =>
                       setCategories([
-                        ...categories.with(index, { category: e.target.value }),
+                        ...(categories.with(index, { category: e.target.value })),
                       ])
                     }
                     value={item.category}
@@ -72,7 +72,7 @@ const AddCategory = () => {
                     aria-label="add"
                     onClick={() => {
                       setCategories([
-                        ...categories.filter((item, i) => i !== index),
+                        ...categories.filter((item: Category, i: number) => i !== index),
                       ]);
                     }}
                   >

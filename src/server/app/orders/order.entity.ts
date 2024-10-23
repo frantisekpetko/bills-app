@@ -7,7 +7,6 @@ import {
   ManyToOne,
 } from 'typeorm';
 import { ObjectType, Field } from '@nestjs/graphql';
-import { User } from '../users/user.entity';
 import { Thing } from '../things/thing.entity';
 
 @ObjectType()
@@ -20,10 +19,6 @@ export class Order {
   @Field()
   @Column({ nullable: false })
   alias: string;
-
-  @Field((_type) => User)
-  @ManyToOne((_type) => User, (user) => user.orders, { nullable: false })
-  user: User;
 
   @Field((_type) => Thing)
   @ManyToOne((_type) => Thing, (thing) => thing.orders, { nullable: false })

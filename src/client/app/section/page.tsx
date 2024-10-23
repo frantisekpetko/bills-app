@@ -1,10 +1,16 @@
 import Image from 'next/image';
-import styles from '../page.module.css';
+import './page.scss';
+import { usePage } from './page.hooks';
 
-export default function Home() {
+export default function Section() {
+  const {
+    animals,
+    activeAnimals
+  } = usePage({})
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>dawwaddaw EFE feF XXXXX</div>
+    <main>
+      <div>dawwaddaw EFE feF XXXXX</div>
     </main>
   );
 }

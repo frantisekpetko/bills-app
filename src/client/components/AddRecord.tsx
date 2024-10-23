@@ -18,7 +18,7 @@ interface Props {
 }
 
 const AddRecord = (props: Props) => {
-  const [records, setRecords] = React.useState<Record[]>([{ item: '' }]);
+  const [records, setRecords] = React.useState<any>([{ item: '' }]);
 
   async function sendData() {
     /*
@@ -72,7 +72,7 @@ const AddRecord = (props: Props) => {
                     color="secondary"
                     aria-label="add"
                     onClick={() => {
-                      setRecords([...records.filter((item, i) => i !== index)]);
+                      setRecords([...records.filter((item: Record, i: number) => i !== index)]);
                     }}
                   >
                     <RemoveIcon />

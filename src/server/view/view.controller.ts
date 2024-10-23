@@ -37,7 +37,7 @@ import { ViewService } from './view.service';
 export class ViewController {
   constructor(private viewService: ViewService) {}
 
-  @Get('/api/data')
+  @Get('api/data')
   public data(@Req() req: Request, @Res() res: Response) {
     res.json([]);
   }

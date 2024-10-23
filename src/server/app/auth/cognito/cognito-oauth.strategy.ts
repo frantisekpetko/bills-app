@@ -72,12 +72,14 @@ export class CognitoOauthStrategy extends PassportStrategy(
       where: { provider, providerId },
     });
     if (!user) {
+      /*
       user = await this.usersService.create({
         provider,
         providerId,
-        name: userinfo.name,
-        username: userinfo.email,
+        firstName: userinfo.name,
+        userName: userinfo.email,
       });
+      */
     }
 
     return user;

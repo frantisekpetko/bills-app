@@ -13,6 +13,9 @@ import { UsersModule } from './users/users.module';
 import { ThingsModule } from './things/things.module';
 import { OrdersModule } from './orders/orders.module';
 import { StuffModule } from './stuff/stuff.module';
+import { JwtAuthService } from './auth/jwt/jwt-auth.service';
+import { JwtService } from '@nestjs/jwt';
+import { SharedModule } from './shared/shared.module';
 
 @Module({
   imports: [
@@ -53,8 +56,9 @@ import { StuffModule } from './stuff/stuff.module';
     ThingsModule,
     OrdersModule,
     StuffModule,
+    SharedModule
   ],
-  providers: [SeedService],
+  providers: [SeedService, JwtAuthService, JwtService],
   controllers: [AppController],
 })
 export class AppModule {}

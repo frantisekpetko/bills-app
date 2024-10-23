@@ -14,7 +14,6 @@ export const ReturnTypes: Record<string,any> = {
 		id:"Float",
 		provider:"String",
 		providerId:"String",
-		username:"String",
 		name:"String",
 		orders:"Order",
 		created_at:"DateTime",

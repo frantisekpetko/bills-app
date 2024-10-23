@@ -2,7 +2,7 @@ import { Resolver, Query } from '@nestjs/graphql';
 import { Inject, UseGuards } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { FindManyOptions } from 'typeorm';
-import { User } from './user.entity';
+import { User } from '../../entity/user.entity';
 import { GqlAuthGuard } from '../auth/graphql/gql-auth.guard';
 import { CurrentUser } from '../auth/graphql/gql-auth.decorator';
 

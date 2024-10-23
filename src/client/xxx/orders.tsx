@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import { NextPage } from 'next';
 import { Request } from 'express';
-
+import { IncomingMessage } from 'http';
+import { GetServerSidePropsContext } from 'next';
 import { typedQuery } from '../app/apollo-client';
 
-export async function getServerSideProps({ req }) {
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const req: any = context.req;
   const { data } = await typedQuery(
     { orders: { alias: true, thing: { name: true } } },
-    req,
+    req
   );
 
   return {

@@ -1,8 +1,10 @@
 import React from 'react';
 import { NextPage } from 'next';
 import { Request } from 'express';
+import { GetServerSidePropsContext } from 'next';
 
-export async function getServerSideProps({ req }) {
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const req: any = context.req;
   return {
     props: { user: (req as Request).user },
   };

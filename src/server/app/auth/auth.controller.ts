@@ -1,9 +1,9 @@
 import { Controller, Get, Res } from '@nestjs/common';
 
-@Controller('auth')
+@Controller('api/auth')
 export class AuthController {
   @Get()
   async auth(@Res() res) {
-    return res.redirect('/auth/cognito');
+    //return res.redirect('/auth/cognito');
   }
 }

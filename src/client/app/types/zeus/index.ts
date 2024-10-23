@@ -843,7 +843,6 @@ export type ValueTypes = {
 	id?:boolean | `@${string}`,
 	provider?:boolean | `@${string}`,
 	providerId?:boolean | `@${string}`,
-	username?:boolean | `@${string}`,
 	name?:boolean | `@${string}`,
 	orders?:ValueTypes["Order"],
 	created_at?:boolean | `@${string}`,

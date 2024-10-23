@@ -11,7 +11,6 @@ import {
 import { CurrentUser } from '../auth/graphql/gql-auth.decorator';
 import { GqlAuthGuard } from '../auth/graphql/gql-auth.guard';
 import { ThingsService } from '../things/things.service';
-import { User } from '../users/user.entity';
 import { Order } from './order.entity';
 import { OrdersService } from './orders.service';
 
@@ -24,8 +23,8 @@ export class OrdersResolver {
 
   @Query((_returns) => [Order])
   @UseGuards(GqlAuthGuard)
-  orders(@CurrentUser() user: User) {
-    return this.ordersService.findAll({ where: { user: { id: user.id } } });
+  orders(@CurrentUser() user: any) {
+    return {};//this.ordersService.findAll({ where: { user: { id: user.id } } });
   }
 
   @ResolveField()
@@ -38,13 +37,13 @@ export class OrdersResolver {
   @Mutation((_returns) => Order)
   @UseGuards(GqlAuthGuard)
   createOrder(
-    @CurrentUser() user: User,
+    @CurrentUser() user: any,
     @Args({ name: 'thingName', type: () => String }) thingName: string,
     @Args({ name: 'alias', type: () => String }) alias: string,
   ) {
     return this.ordersService.createFromThingDetails({
       alias: alias,
-      user: user,
+      //user: user,
       thingName: thingName,
     });
   }

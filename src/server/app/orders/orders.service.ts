@@ -27,9 +27,12 @@ export class OrdersService {
   }
 
   findAll(params: FindManyOptions<Order> = {}) {
+    return [];
+    /*
     return this.ordersRepository.find(
       Object.assign({ relations: ['user', 'thing'] }, params),
     );
+    */
   }
 
   async findOrCreateOne(params: FindOneOptions<Order> = {}) {
@@ -40,7 +43,7 @@ export class OrdersService {
       const conditions = params.where as CreateOrderDto;
       order = await this.create({
         alias: conditions.alias,
-        user: conditions.user,
+        //user: conditions.user,
         thing: conditions.thing,
       });
     }
@@ -55,7 +58,7 @@ export class OrdersService {
 
     return this.findOrCreateOne({
       where: {
-        user: { id: params.user.id },
+        //user: { id: params.user.id },
         alias: params.alias,
         thing: { id: thing.id },
       },
