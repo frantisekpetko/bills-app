@@ -1,4 +1,4 @@
-import { Injectable, Logger } from '@nestjs/common';
+import { Injectable, Logger, UnauthorizedException } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
 import { Strategy } from 'passport-facebook';
 import { UsersService } from '../../users/users.service';
@@ -20,11 +20,16 @@ export class FacebookStrategy extends PassportStrategy(Strategy, 'facebook') {
       clientSecret: configService.get<string>('FACEBOOK_APP_SECRET'),
       callbackURL: 'http://localhost:8000/api/auth/facebook/redirect',
       profileFields: ['id', 'emails', 'name', 'picture.type(large)'],
+      scope: ['email'],
     });
   }
 
   async validate(accessToken: string, refreshToken: string, profile: any) {
     const { id, emails, name,  photos  } = profile;
+    this.logger.log(JSON.stringify(profile, null, 4));
+    if (!profile) {
+      throw new UnauthorizedException('Invalid Facebook credentials');
+    }
 
     let user: User = await this.usersService.findOne({
       where: { provider: 'facebook', providerId: id },

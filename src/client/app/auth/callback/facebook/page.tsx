@@ -24,8 +24,8 @@ const Callback = () => {
     const fetchSession = async () => {
       try {
         // Optionally, you can fetch user data or validate the session
-        console.log({ fetchSessionTokenStorage: window.localStorage.getItem('token') })
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/auth/google/protected`, {
+        console.log({ fetchSessionTokenStorage: window.localStorage.getItem('token') });
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/auth/facebook/protected`, {
           withCredentials: true,
           headers: {
             Authorization: `Bearer ${window.localStorage.getItem('token')}`
