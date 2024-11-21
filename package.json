@@ -82,7 +82,7 @@
     "@babel/parser": "^7.26.2",
     "@babel/types": "^7.25.9",
     "@faker-js/faker": "^9.2.0",
-    "@nestjs/cli": "^10.4.7",
+    "@nestjs/cli": "^10.4.8",
     "@nestjs/schematics": "^10.2.3",
     "@nestjs/testing": "^10.4.8",
     "@next/eslint-plugin-next": "^15.0.3",
