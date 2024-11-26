@@ -121,7 +121,7 @@
     "prettier": "^3.3.3",
     "sass": "^1.81.0",
     "supertest": "^7.0.0",
-    "ts-jest": "^28.0.8",
+    "ts-jest": "^29.2.5",
     "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.1",
