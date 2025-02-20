@@ -52,7 +52,7 @@
     "commander": "^13.1.0",
     "cookie-parser": "^1.4.7",
     "dayjs": "^1.11.13",
-    "easy-peasy": "^6.0.5",
+    "easy-peasy": "^6.1.0",
     "formik": "^2.2.9",
     "google-auth-library": "^9.15.1",
     "js-cookie": "^3.0.5",
