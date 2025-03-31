@@ -69,7 +69,7 @@
     "passport-oauth2": "^1.6.1",
     "react": "^19.0.0",
     "react-content-loader": "7.0.2",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.1.0",
     "reflect-metadata": "^0.2.2",
     "rimraf": "^6.0.1",
     "rxjs": "^7.8.2",
