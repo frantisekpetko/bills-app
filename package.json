@@ -76,7 +76,7 @@
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7",
     "ts-morph": "^26.0.0",
-    "typeorm": "^0.3.24"
+    "typeorm": "^0.3.25"
   },
   "devDependencies": {
     "@babel/parser": "^7.27.5",
