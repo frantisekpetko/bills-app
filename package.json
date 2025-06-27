@@ -118,7 +118,7 @@
     "jest": "^30.0.3",
     "json-schema": "^0.4.0",
     "mime": "^4.0.7",
-    "prettier": "^3.6.1",
+    "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "supertest": "^7.1.1",
     "ts-jest": "^29.4.0",
