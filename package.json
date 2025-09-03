@@ -27,7 +27,7 @@
     "scaffold": "cd node_modules/@web/scaffold & cross-env NODE_ENV=production nest start"
   },
   "dependencies": {
-    "@apollo/client": "^4.0.2",
+    "@apollo/client": "^4.0.3",
     "@apollo/gateway": "^2.11.2",
     "@babel/runtime": "^7.28.3",
     "@emotion/react": "^11.14.0",
