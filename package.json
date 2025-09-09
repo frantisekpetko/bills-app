@@ -104,7 +104,7 @@
     "@types/react-dom": "^19.1.9",
     "@types/supertest": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "^8.42.0",
-    "@typescript-eslint/parser": "^8.42.0",
+    "@typescript-eslint/parser": "^8.43.0",
     "connect": "^3.7.0",
     "cookiejar": "^2.1.4",
     "cypress": "^15.1.0",
