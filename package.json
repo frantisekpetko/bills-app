@@ -75,7 +75,7 @@
     "rxjs": "^7.8.2",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7",
-    "ts-morph": "^27.0.0",
+    "ts-morph": "^27.0.2",
     "typeorm": "^0.3.27"
   },
   "devDependencies": {
