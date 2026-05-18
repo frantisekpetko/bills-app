@@ -55,7 +55,7 @@
     "easy-peasy": "^6.1.1",
     "formik": "^2.4.9",
     "google-auth-library": "^10.6.2",
-    "js-cookie": "^3.0.5",
+    "js-cookie": "^3.0.7",
     "jsonwebtoken": "^9.0.3",
     "graphql": "^16.14.0",
     "nestjs-console": "10.0.0",
