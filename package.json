@@ -51,7 +51,7 @@
     "axios": "^1.16.1",
     "commander": "^14.0.3",
     "cookie-parser": "^1.4.7",
-    "dayjs": "^1.11.20",
+    "dayjs": "^1.11.21",
     "easy-peasy": "^6.1.1",
     "formik": "^2.4.9",
     "google-auth-library": "^10.6.2",
