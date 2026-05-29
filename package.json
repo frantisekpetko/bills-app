@@ -49,7 +49,7 @@
     "@preact/signals-react": "^3.10.1",
     "apollo-server-express": "^3.11.1",
     "axios": "^1.16.1",
-    "commander": "^14.0.3",
+    "commander": "^15.0.0",
     "cookie-parser": "^1.4.7",
     "dayjs": "^1.11.21",
     "easy-peasy": "^6.1.1",
