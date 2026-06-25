@@ -54,7 +54,7 @@
     "dayjs": "^1.11.21",
     "easy-peasy": "^6.1.1",
     "formik": "^2.4.9",
-    "google-auth-library": "^10.7.0",
+    "google-auth-library": "^10.9.0",
     "js-cookie": "^3.0.8",
     "jsonwebtoken": "^9.0.3",
     "graphql": "^17.0.1",
