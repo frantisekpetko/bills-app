@@ -46,7 +46,7 @@
     "@nestjs/platform-express": "^11.1.28",
     "@nestjs/typeorm": "^11.0.3",
     "@preact/signals-core": "^1.14.3",
-    "@preact/signals-react": "^3.10.3",
+    "@preact/signals-react": "^3.11.0",
     "apollo-server-express": "^3.11.1",
     "axios": "^1.18.1",
     "commander": "^15.0.0",
