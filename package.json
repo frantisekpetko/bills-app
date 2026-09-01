@@ -44,7 +44,7 @@
     "@nestjs/jwt": "^12.0.1",
     "@nestjs/passport": "^12.0.0",
     "@nestjs/platform-express": "^11.2.1",
-    "@nestjs/typeorm": "^11.0.3",
+    "@nestjs/typeorm": "^12.0.1",
     "@preact/signals-core": "^1.14.3",
     "@preact/signals-react": "^3.12.0",
     "apollo-server-express": "^3.11.1",
