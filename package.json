@@ -29,7 +29,7 @@
   "dependencies": {
     "@apollo/client": "^4.2.12",
     "@apollo/gateway": "^2.14.4",
-    "@babel/runtime": "^8.0.0",
+    "@babel/runtime": "^8.0.5",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "9.4.0",
